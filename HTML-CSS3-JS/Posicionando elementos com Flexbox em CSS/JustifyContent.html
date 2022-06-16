@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Justify content</title>
+    <style>
+        .container {
+            max-width: 400px;
+            border: 1px solid black;
+            margin: 0;
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .item{
+            background-color: blueviolet;
+            color: white;
+            text-align: center;
+            margin: 5px;
+        }
+        .flex-start{
+            justify-content: flex-start;
+        }
+        .flex-end{
+            justify-content: flex-end;
+        }
+        .center{
+            justify-content: center;
+        }
+        .space-between{
+            justify-content: space-between;
+        }
+        .space-around{
+            justify-content: space-around;
+        }
+        .column{
+            flex-direction: column;
+            min-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>row</h1><!--Observando o comportamento em linha-->
+    <!--Posiciona items no começo do container-->
+    <p>Flex-start</p>
+    <section class="container flex-start">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </section>
+    <!--Posiciona items no fim do container-->
+    <p>Flex-end</p>
+    <section class="container flex-end">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </section>
+    <!--Posiciona items no centro do container-->
+    <p>center</p>
+    <section class="container center">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+    </section>
+    <!--Posiciona items no começo e no fim com sepacao por igual  do espaço do  container-->
+    <p>space-between</p>
+    <section class="container space-between">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+    </section>
+    <!--Posiciona items com espacamento equivalente nas bordas do container-->
+    <p>space-around</p>
+    <section class="container space-around">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+    </section>
+
+    <h1>Column</h1><!--Observando comportamento em coluna-->
+     <!--Posiciona items no começo do container-->
+    <p>Flex-start (column)</p>
+    <section class="container flex-start column">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+    </section>
+    <!--Posiciona items no fim do container-->
+    <p>Flex-end (column)</p>
+    <section class="container flex-end column">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+    </section>
+    <!--Posiciona items no centro do container-->
+    <p>center(column)</p>
+    <section class="container center column">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+    </section>
+    <!--Posiciona items no começo e no fim com sepacao por igual  do espaço do  container-->
+    <p>space-between (column)</p>
+    <section class="container space-between column">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+    </section>
+    <!--Posiciona items com espacamento equivalente nas bordas do container-->
+    <p>space-around (column)</p>
+    <section class="container space-around column">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+    </section>
+</body>
+</html>
